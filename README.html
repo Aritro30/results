@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <style type="text/css"> body { margin: 0; padding: 0; text-align: center; }
+    div.container { width: 800px; margin: 0 auto; text-align: justify; }
+    .flow_pose { border:0px solid gray; width: 800px; margin: 0 auto;
+    text-align: center; }
+
+    #title{ font-family: Gill Sans, Verdana; font-size: 11px; line-height:
+	14px; text-transform: uppercase; letter-spacing: 2px; font-weight:
+	bold; color: #444; } div.container p { font-family: Times New Roman,
+	times,times-roman, georgia, serif; font-size: 16px; line-height: 20px;
+	color: #444; }
+
+    div.container h2 { font-family: times, Times New Roman, times-roman,
+	georgia, serif; font-size: 28px; line-height: 40px; letter-spacing:
+	-1px;color: #444; }
+
+    div.container h3 { font-family: times, Times New Roman, times-roman,
+	georgia, serif; font-size: 18px; line-height: 20px; letter-spacing:
+	-1px;color: #444; }
+  </style>
+  <body>
+    <div class="container">
+      <hr style="clear:both;"/>
+      <H2 style="text-align: center;"> Bootstrapping Human Optical Flow and Pose </H2>
+      <div id="title" style="text-align: center;">Thesis</div>
+      <hr style="clear:both;"/>
+      <H3 style="text-align: center;"> Overview </H3>
+      <!-- <div id="list">      
+        In this supplementary material, we provide:
+            <ol>
+            <li><b>Additional qualitative highlights</b> of our method.
+            </li>
+            <li><b>Supplementary appendix</b> which contains ablation study.
+            </li>
+            </ol>
+        </div> -->
+        <br>
+      <div id="title">Abstract:</div>
+      <p> We propose a bootstrapping framework to enhance human
+        optical flow and pose. We show that, for videos involving humans in
+        scenes, we can improve both the optical flow and the pose estimation
+        quality of humans by considering the two tasks at the same time. We
+        enhance optical flow estimates by fine-tuning them to fit the human
+        pose estimates and vice versa. In more detail, we optimize the pose and
+        optical flow networks to, at inference time, agree with each other. We
+        show that this results in state-of-the-art results on the Human 3.6M and
+        3D Poses in the Wild datasets, as well as a human-related subset of the
+        Sintel dataset, both in terms of pose estimation accuracy and the optical
+        flow accuracy at human joint locations.
+      </p>
+      <hr style="clear:both;"/>
+      <H3 style="text-align: center;"> Additional Qualitative Highlights </H3>
+      <div id="title">Qualitative Highlights of Optical Flow:</div>
+      <p> We demonstrate how our method improves optical flow estimates via bootstrapping it with human pose estimation.
+      </p>
+    </div>
+    <video class="flow_pose" controls autoplay loop>
+      <source src="vids/demo_flow_1.mp4" type="video/mp4">
+    Your browser does not support HTML5 video. Please check the vids folder.
+    </video>
+    </div>
+    </div>
+    <br>
+    <br>
+    <video class="flow_pose" controls autoplay loop>
+      <source src="vids/demo_flow_2.mp4" type="video/mp4">
+        Your browser does not support HTML5 video. Please check the vids folder.
+    </video>
+
+    <div class="container">
+  <hr style="clear:both;"/>
+    <div id="title">Qualitative Highlights of Human Pose:</div>
+    <p> We further show how our method improves human pose estimation with the help of optical flow.
+    </p>
+</div>
+<video class="flow_pose" controls autoplay loop>
+  <source src="vids/demo_pose_6.mp4"  type="video/mp4">
+    Your browser does not support HTML5 video. Please check the vids folder.
+</video>
+</div>
+<br>
+<br>
+<video class="flow_pose" controls autoplay loop>
+  <source src="vids/demo_pose_7.mp4" type="video/mp4">
+    Your browser does not support HTML5 video. Please check the vids folder.
+</video>
+<br>
+<br>
+
+<!-- <div class="container">
+<hr style="clear:both;"/>
+        <div id="bar"></div>
+        <H3 style="text-align: center;">Supplementary Appendix</H3>
+        <p>
+        Ablation study in supplementary appendix.
+        For more details, <b>Click</b> the image below to access the <a href="pdfs/supplementary_appendix.pdf">PDF</a> </br></br>
+        </p>
+        <div style="text-align: center;">
+            <a href="pdfs/supplementary_appendix.pdf" style="text-align: center;">
+                <img src="imgs/supp.png" alt="Supplementary Appendix PDF" width="70%" align="center"
+                    style="border: 1px solid black;">
+            </a>
+        </div>
+</div>
+<br><br>
+<div class="container">
+        <hr style="clear:both;" />
+        <p style="text-align:center;">
+            The supplementary videos are encoded by FFMPEG with h.264 codec. If you can't play the video, please
+            download the VLC player at: <a
+                href="http://www.videolan.org/vlc/index.html">http://www.videolan.org/vlc/index.html</a>
+        </p>
+        <hr style="clear:both;" />
+</div>   -->
+
+</body>
+</html>
